@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+/// <summary>
+/// Initializes grid & algorithm. Constructs a path on user input.
+/// </summary>
+
+using UnityEngine;
 
 public class AStarMaster : MonoBehaviour
 {
