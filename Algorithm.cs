@@ -1,4 +1,9 @@
-﻿using System.Collections.Generic;
+/// <summary>
+/// The heart of the implementation.
+/// Provides the core functionality of the A* algorithm.
+/// </summary>
+
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Algorithm
