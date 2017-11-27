@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+/// <summary>
+/// A single node of the 2D grid. Easily extendable to a 3D grid.
+/// </summary>
+
+using UnityEngine;
 
 [System.Serializable]
 public class Cell
