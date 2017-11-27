@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+/// <summary>
+/// The underlying grid for the A* algorithm. Easily extendable to a 3D grid.
+/// </summary>
+
+using UnityEngine;
 
 [System.Serializable]
 public class Grid2D
