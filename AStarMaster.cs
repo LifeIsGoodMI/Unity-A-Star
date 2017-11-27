@@ -1,5 +1,5 @@
 /// <summary>
-/// Initializes grid & algorithm. Constructs a path on user input.
+/// Initializes grid and algorithm. Constructs a path on user input.
 /// </summary>
 
 using UnityEngine;
