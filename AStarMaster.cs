@@ -31,6 +31,8 @@ public class AStarMaster : MonoBehaviour
 
     private void Update()
     {
+        // Receive the constructed path.
+        // All you have to do now is simply to let an actor follow this path !
         if (Input.GetKeyDown(KeyCode.Return))
             path = algorithm.AStarSearch();
     }
