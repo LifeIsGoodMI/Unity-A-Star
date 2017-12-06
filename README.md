@@ -7,6 +7,7 @@ I've left the most important fields public so you can see the constructed paths 
 **Instructions**
 
   1. Throw the AStarMaster component on a Game Object.
-  2. Throw the Actor component on a Game Object representing your Entity to follow the constructed path. *You're good to go!*
+  2. Throw the Actor component on a Game Object representing your Entity to follow the constructed path. 
+  3. Asign the actor Game Object to the actor field of the AStarMaster component. *You're good to go!*
 
 Note: No visuals included, you might want to visualize the grid for example. (e.g. using Unity's low level Graphics library)
