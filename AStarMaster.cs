@@ -15,6 +15,8 @@ public class AStarMaster : MonoBehaviour
 
     public Cell[] path;
 
+    public Actor actor;
+
 
     private void Awake()
     {
@@ -31,9 +33,16 @@ public class AStarMaster : MonoBehaviour
 
     private void Update()
     {
-        // Receive the constructed path.
-        // All you have to do now is simply to let an actor follow this path !
         if (Input.GetKeyDown(KeyCode.Return))
-            path = algorithm.AStarSearch();
+            path = algorithm.AStarSearch(); // Receive the constructed path.
+
+        // Let a actor follow the path, really really basic.
+        if (path != null && path.Length > 0)
+        {
+            var positions = new List<Vector3>();
+            path.ToList().ForEach(c => positions.Add(new Vector3(c.position.x, 0, c.position.y)));
+
+            actor.Move(positions.ToArray());
+        }
     }
 }
