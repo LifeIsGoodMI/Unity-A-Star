@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+/// <summary>
+/// Just a very basic actor, following the returned path of the AStarSearch method.
+/// </summary>
+using UnityEngine;
 
 public class Actor : MonoBehaviour
 {
@@ -8,6 +11,8 @@ public class Actor : MonoBehaviour
 
     public void Move(Vector3[] path)
     {
+        // Target the next cell in the path when you're closer then 0.4 meters to the current.
+        // Don't set this too low, otherwise the actor might get stuck.
         if ((path[curIndex] - transform.position).magnitude < 0.4f)
             curIndex++;
         if (curIndex >= path.Length)
